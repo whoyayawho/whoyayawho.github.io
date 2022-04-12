@@ -1,12 +1,14 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "블로그 만들기"
+    url: /makeblog1
+
+makeblog:
+  - title: 블로그 만들기
+    children:
+      - title: "(1) Github Pages로 블로그 만들기"
+        url: /makeblog1
+      - title: "(2) Github Pages에 글 포스팅 하기"
+        url: /makeblog2
+      - title: "(3) 블로그 설정하기 (TOC, 사이드바, 메뉴)"
+        url: /makeblog3
