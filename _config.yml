@@ -94,9 +94,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
+    tracking_id          : "G-GFYVD514JF"
     anonymize_ip         : # true, false (default)
 
 
@@ -289,7 +289,7 @@ defaults:
       author_profile: false
       read_time: false
       comments: # true
-      share: true
+      share: false
       related: true
       show_date: true
       toc: true
@@ -304,7 +304,7 @@ defaults:
       author_profile: true
       read_time: false
       comments: # true
-      share: true
+      share: false
       related: true
       show_date: true
       toc: false

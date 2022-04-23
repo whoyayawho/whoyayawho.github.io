@@ -12,3 +12,6 @@ makeblog:
         url: /makeblog2
       - title: "(3) 블로그 설정하기 (TOC, 사이드바, 메뉴)"
         url: /makeblog3
+      - title: "(4) 구글 Analytics 및 검색엔진(구글, 네이버, 다음, 빙) 등록"
+        url: /makeblog4
+
