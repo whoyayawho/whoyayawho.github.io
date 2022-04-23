@@ -102,18 +102,21 @@ analytics:
 
 # Site Author
 author:
- name             : "Whoyayawho"
+ name             : "- 공학박사 <br/> - 다중 이동체 제어 <br/> - 라이다 <br/> - 제어/인지/맵핑/위치측위"
  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
- bio              : "전문가는 아니라도 만들고 싶은건 만들 수 있는 개발자"
+ bio              : ""
  location         : "Korea"
  email            :
  links:
    - label: "Email"
      icon: "fas fa-fw fa-envelope-square"
      url: mailto:sos1zzang@naver.com
-   - label: "Website"
+   - label: "YouTube"
+     icon: "fab fa-fw fa-youtube"
+     url: "https://www.youtube.com/channel/UCS6sgwM4lCEFFk5_zN7LdJg"
+   - label: "Web Site"
      icon: "fas fa-fw fa-link"
-     # url: "https://your-website.com"
+     url: "https://soslab-msd2.github.io/"
    - label: "Twitter"
      icon: "fab fa-fw fa-twitter-square"
      # url: "https://twitter.com/"
