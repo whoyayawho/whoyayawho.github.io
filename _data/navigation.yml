@@ -16,4 +16,5 @@ makeblog:
         url: /makeblog4
       - title: "(5) 글자 크기, 본문 너비 수정"
         url: /makeblog5
-
+      - title: "(6) 블로그에 애드센스 광고 넣기"
+        url: /makeblog6
