@@ -34,3 +34,5 @@ ubuntu:
     children:
       - title: "압축/압축풀기 (zip, unzip, tar)"
         url: /ubuntuZipUnzip
+      - title: "C++ 코드 실행 시간 측정"
+        url: /ubuntuTimeMeasure
