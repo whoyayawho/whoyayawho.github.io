@@ -1,5 +1,9 @@
 # main links
 main:
+  - title: "Ubuntu"
+    url: /ubuntuZipUnzip
+  - title: "ROS"
+    url: /rosmsgToFromPCL
   - title: "블로그 만들기"
     url: /makeblog1
 
@@ -18,3 +22,15 @@ makeblog:
         url: /makeblog5
       - title: "(6) 블로그에 애드센스 광고 넣기"
         url: /makeblog6
+
+ros:
+  - title: ROS
+    children:
+      - title: "PCL To/From ROS msg 변환"
+        url: /rosmsgToFromPCL
+
+ubuntu:
+  - title: Ubuntu
+    children:
+      - title: "압축/압축풀기 (zip, unzip, tar)"
+        url: /ubuntuZipUnzip
