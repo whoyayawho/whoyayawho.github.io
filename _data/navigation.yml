@@ -26,13 +26,15 @@ makeblog:
 ros:
   - title: ROS
     children:
-      - title: "PCL To/From ROS msg 변환"
+      - title: "- PCL To/From ROS msg 변환"
         url: /rosmsgToFromPCL
+      - title: "- `.so` 파일 추가"
+        url: /rosAddLib
 
 ubuntu:
   - title: Ubuntu
     children:
-      - title: "압축/압축풀기 (zip, unzip, tar)"
+      - title: "- 압축/압축풀기 (zip, unzip, tar)"
         url: /ubuntuZipUnzip
-      - title: "C++ 코드 실행 시간 측정"
+      - title: "- C++ 코드 실행 시간 측정"
         url: /ubuntuTimeMeasure
