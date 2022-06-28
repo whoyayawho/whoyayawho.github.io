@@ -38,3 +38,5 @@ ubuntu:
         url: /ubuntuZipUnzip
       - title: "- C++ 코드 실행 시간 측정"
         url: /ubuntuTimeMeasure
+      - title: "- NVCC로 CUDA 버전 확인하기"
+        url: /ubuntuNvcc
