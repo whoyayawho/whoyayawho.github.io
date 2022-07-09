@@ -1,5 +1,5 @@
 ---
-title: "[Ubuntu] C++ 코드 실행 시간 측정"
+title: "[C++] 코드 실행 시간 측정"
 
 sidebar:
     nav: "ubuntu"
