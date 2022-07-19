@@ -42,6 +42,10 @@ ubuntu:
         url: /ubuntuDockerUsermod
       - title: "- Ubuntu/Jetson 한글 키보드, 한영키 설정"
         url: /ubuntuHangul
+      - title : "- apt update 실패 (DNS 설정)"
+        url : /ubuntuAptUpdateError
+      - title : "- Docker 오류 \"could not select device driver\" (nvidia-container-toolkit)"
+        url : /ubuntuDockerSelectDeviceDriverError
 
   - title: Jetson
     children:
