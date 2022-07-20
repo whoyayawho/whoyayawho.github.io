@@ -2,7 +2,7 @@
 title: "[ROS] PCL To/From ROS msg 변환"
 
 sidebar:
-    nav: "ros"
+    nav: "ubuntu"
 ---
 
 <br/>
@@ -25,7 +25,7 @@ lidar_msg.header.frame_id = frame_id;
 <br/>
 
 
-# 2. ROS msg to PCL
+# 2. PCL from ROS msg 
 
 ```cpp
 #include <pcl_ros/point_cloud.h>

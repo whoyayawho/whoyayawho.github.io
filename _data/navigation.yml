@@ -2,8 +2,8 @@
 main:
   - title: "Ubuntu"
     url: /ubuntuZipUnzip
-  - title: "ROS"
-    url: /rosmsgToFromPCL
+  - title: "Windows"
+    url: /ubuntuMFCResourceError
   - title: "블로그 만들기"
     url: /makeblog1
 
@@ -22,14 +22,6 @@ makeblog:
         url: /makeblog5
       - title: "(6) 블로그에 애드센스 광고 넣기"
         url: /makeblog6
-
-ros:
-  - title: ROS
-    children:
-      - title: "- PCL To/From ROS msg 변환"
-        url: /rosmsgToFromPCL
-      - title: "- `.so` 파일 추가"
-        url: /rosAddLib
 
 ubuntu:
   - title: Ubuntu
@@ -58,3 +50,16 @@ ubuntu:
         url: /cppTimeMeasure
       - title: "- C++ 랜덤 값 생성"
         url: /cppRandomValues
+
+  - title: ROS
+    children:
+      - title: "- PCL To/From ROS msg 변환"
+        url: /rosmsgToFromPCL
+      - title: "- `.so` 파일 추가"
+        url: /rosAddLib
+
+windows:
+  - title: MFC
+    children:
+      - title: "- 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
+        url: /ubuntuMFCResourceError
