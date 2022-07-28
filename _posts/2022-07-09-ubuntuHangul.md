@@ -90,7 +90,7 @@ $ ibus-setup
 
 `System Settings` > `Language Support` 순서로 이동하면 `Language Support` 창이 뜬다.
 
-![]({{ site.url }}/assets/images/220709/hangul_jetson1.jpg){: width="100%" .align-center
+![]({{ site.url }}/assets/images/220709/hangul_jetson1.jpg){: width="100%" .align-center}
 
 이후의 내용은 PC Ubuntu 버전과 똑같이 설정 가능하다. (["1. Ubuntu 한영 설정"  > "(1) 한국어팩 설치"]({{ site.url }}/ubuntuHangul/#1-한국어팩-설치) 참고)
 
