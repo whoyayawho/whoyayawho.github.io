@@ -3,7 +3,7 @@ main:
   - title: "Ubuntu"
     url: /ubuntuZipUnzip
   - title: "Windows"
-    url: /ubuntuMFCResourceError
+    url: /windowsMFCResourceError
   - title: "블로그 만들기"
     url: /makeblog1
 
@@ -38,6 +38,8 @@ ubuntu:
         url : /ubuntuAptUpdateError
       - title : "- Docker 오류 \"could not select device driver\" (nvidia-container-toolkit)"
         url : /ubuntuDockerSelectDeviceDriverError
+      - title : "- Vim 사용법"
+        url : /ubuntuVim
 
   - title: Jetson
     children:
@@ -62,4 +64,4 @@ windows:
   - title: MFC
     children:
       - title: "- 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
-        url: /ubuntuMFCResourceError
+        url: /windowsMFCResourceError
