@@ -40,6 +40,8 @@ ubuntu:
         url : /ubuntuDockerSelectDeviceDriverError
       - title : "- Vim 사용법"
         url : /ubuntuVim
+      - title : "- 노트북 덮었을 때 절전모드 진입 끄기"
+        url : /ubuntuLaptopLid
 
   - title: Jetson
     children:
