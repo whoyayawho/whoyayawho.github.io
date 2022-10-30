@@ -4,6 +4,8 @@ main:
     url: /ubuntuZipUnzip
   - title: "Windows"
     url: /windowsMFCResourceError
+  - title: "웹개발"
+    url: /webInit
   - title: "블로그 만들기"
     url: /makeblog1
 
@@ -71,3 +73,9 @@ windows:
     children:
       - title: "● 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
         url: /windowsMFCResourceError
+
+web:
+  - title: Web
+    children:
+      - title: "● 웹개발 환경구축"
+        url: /webInit
