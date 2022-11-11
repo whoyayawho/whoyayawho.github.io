@@ -1,5 +1,5 @@
 ---
-title: "[Ubuntu] Docker 오류 \"could not select device driver\" (nvidia-container-toolkit 설치)"
+title: "[Docker] 오류 \"could not select device driver\" (nvidia-container-toolkit 설치)"
 
 sidebar:
     nav: "ubuntu"
