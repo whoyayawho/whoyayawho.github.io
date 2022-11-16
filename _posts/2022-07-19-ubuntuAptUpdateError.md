@@ -1,5 +1,5 @@
 ---
-title: "[Ubuntu] apt update 실패 (DNS 설정)"
+title: "[Ubuntu] apt update 실패 (Temporary failure resolving 'ports.ubuntu.com')"
 
 sidebar:
     nav: "ubuntu"

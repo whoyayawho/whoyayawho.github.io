@@ -40,12 +40,16 @@ ubuntu:
         url: /ubuntuHangul
       - title : "● 노트북 덮었을 때 절전모드 진입 끄기"
         url : /ubuntuLaptopLid
-      - title : "● apt update 실패 (DNS 설정)"
+      - title : "● apt update 실패 (Temporary failure resolving 'ports.ubuntu.com')"
         url : /ubuntuAptUpdateError
       - title: "● NVCC로 CUDA 버전 확인하기"
         url: /ubuntuNvcc
       - title : "● 크롬(Chrome) Unlock Login keyring 팝업 및 Keyring 삭제"
         url : /ubuntuChromeKeyring
+      - title : "● 원격 접속을 위한 SSH 설정"
+        url : /ubuntuSShSetup
+      - title : "● 쉘스크립트 자동 실행 등록 및 더블 클릭 실행 (feat. Docker)"
+        url : /ubuntuShellScriptAutoStart
 
   - title: Jetson
     children:
