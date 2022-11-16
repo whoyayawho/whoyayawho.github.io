@@ -6,7 +6,7 @@ main:
     url: /windowsMFCResourceError
   - title: "웹개발"
     url: /webInit
-  - title: "블로그 만들기"
+  - title: "만들기"
     url: /makeblog1
 
 makeblog:
@@ -72,10 +72,12 @@ ubuntu:
 
   - title: Docker
     children:
+      - title: "● 기본 명령어, 이미지 빌드 및 업로드, 컨테이너 생성"
+        url: /docker
       - title: "● Visual Studio Code에서 Docker가 보이지 않음 (Docker 사용자 그룹 추가)"
         url: /dockerUsermod
-      - title : "● 오류 \"could not select device driver\" (nvidia-container-toolkit)"
-        url : /dockerSelectDeviceDriverError
+      - title: "● 오류 \"could not select device driver\" (nvidia-container-toolkit)"
+        url: /dockerSelectDeviceDriverError
 
 
 windows:
