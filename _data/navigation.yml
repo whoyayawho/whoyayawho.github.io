@@ -55,6 +55,8 @@ ubuntu:
     children:
       - title: "● Jetpack 버전 확인"
         url: /jetsonJetpackVer
+      - title: "● 쿨링팬 구동 설정"
+        url: /jetsonFanStart
 
   - title: C++
     children:
