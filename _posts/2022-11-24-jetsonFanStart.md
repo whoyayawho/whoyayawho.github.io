@@ -55,8 +55,8 @@ $ sudo chmod u+x /usr/bin/run_jetson_fan.sh
 ```bash
 [Unit]
 Description=Run Jetson Fan
-Requires=docker.service
-After=docker.service
+Requires=multi-user.target
+After=multi-user.target
 
 [Service]
 Type=forking
