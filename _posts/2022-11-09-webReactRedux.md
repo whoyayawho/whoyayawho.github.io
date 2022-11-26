@@ -2,7 +2,7 @@
 title: "[Web] 리액트 state 관리 (Redux, Redux Toolkit)"
 
 sidebar:
-    nav: "web"
+    nav: "dev"
 ---
 
 <br/>

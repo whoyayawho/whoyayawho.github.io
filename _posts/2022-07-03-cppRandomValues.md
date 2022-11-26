@@ -2,7 +2,7 @@
 title: "[C++] 랜덤 값 생성"
 
 sidebar:
-    nav: "ubuntu"
+    nav: "dev"
 ---
 
 <br/>

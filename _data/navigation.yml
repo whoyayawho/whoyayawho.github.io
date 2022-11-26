@@ -4,12 +4,12 @@ main:
     url: /ubuntuZipUnzip
   - title: "Windows"
     url: /windowsMFCResourceError
-  - title: "웹개발"
+  - title: "개발"
     url: /webInit
   - title: "만들기"
     url: /makeblog1
 
-makeblog:
+making:
   - title: 블로그 만들기
     children:
       - title: "(1) Github Pages로 블로그 만들기"
@@ -58,6 +58,13 @@ ubuntu:
       - title: "● 쿨링팬 구동 설정"
         url: /jetsonFanStart
 
+windows:
+  - title: MFC
+    children:
+      - title: "● 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
+        url: /windowsMFCResourceError
+
+dev:
   - title: C++
     children:
       - title: "● 코드 실행 시간 측정"
@@ -81,14 +88,6 @@ ubuntu:
       - title: "● 오류 \"could not select device driver\" (nvidia-container-toolkit)"
         url: /dockerSelectDeviceDriverError
 
-
-windows:
-  - title: MFC
-    children:
-      - title: "● 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
-        url: /windowsMFCResourceError
-
-web:
   - title: Web
     children:
       - title: "● 웹개발 환경구축"
@@ -99,3 +98,4 @@ web:
         url: /webReactRedux
       - title : "● 자바스크립트 배열 함수"
         url: /webJavascriptArrayMethod
+  

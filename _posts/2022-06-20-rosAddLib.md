@@ -2,7 +2,7 @@
 title: "[ROS] .so 파일 추가"
 
 sidebar:
-    nav: "ubuntu"
+    nav: "dev"
 ---
 
 <br/>

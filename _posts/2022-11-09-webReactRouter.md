@@ -2,7 +2,7 @@
 title: "[Web] 리액트 라우터 (react-router-dom)"
 
 sidebar:
-    nav: "web"
+    nav: "dev"
 ---
 
 <br/>

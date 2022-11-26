@@ -2,7 +2,7 @@
 title: "[Docker] 오류 \"could not select device driver\" (nvidia-container-toolkit 설치)"
 
 sidebar:
-    nav: "ubuntu"
+    nav: "dev"
 ---
 
 <br/>

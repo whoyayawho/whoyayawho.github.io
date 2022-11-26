@@ -2,7 +2,7 @@
 title: "[Docker] Visual Studio Code에서 Docker가 보이지 않음 (Docker 사용자 그룹 추가)"
 
 sidebar:
-    nav: "ubuntu"
+    nav: "dev"
 ---
 
 <br/>

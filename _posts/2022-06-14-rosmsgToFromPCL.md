@@ -2,7 +2,7 @@
 title: "[ROS] PCL To/From ROS msg 변환"
 
 sidebar:
-    nav: "ubuntu"
+    nav: "dev"
 ---
 
 <br/>

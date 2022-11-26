@@ -2,7 +2,7 @@
 title: "[Web] 자바스크립트 배열 함수"
 
 sidebar:
-    nav: "web"
+    nav: "dev"
 ---
 
 <br/>
