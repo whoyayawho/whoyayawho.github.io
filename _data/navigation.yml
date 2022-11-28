@@ -3,7 +3,7 @@ main:
   - title: "Ubuntu"
     url: /ubuntuZipUnzip
   - title: "Windows"
-    url: /windowsMFCResourceError
+    url: /mfcResourceError
   - title: "개발"
     url: /webInit
   - title: "만들기"
@@ -62,7 +62,9 @@ windows:
   - title: MFC
     children:
       - title: "● 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
-        url: /windowsMFCResourceError
+        url: /mfcResourceError
+      - title: "● MFC 종료 함수"
+        url: /mfcWM_CLOSE
 
 dev:
   - title: C++
@@ -71,6 +73,13 @@ dev:
         url: /cppTimeMeasure
       - title: "● 랜덤 값 생성"
         url: /cppRandomValues
+
+  - title: Python
+    children:
+      - title: "● 가상 환경 설정 (venv)"
+        url: /pythonVenv
+      - title: "● 파이썬 없이 파이썬3만 설치되어 있는 경우 오류 해결 (/usr/bin/env: 'python': No such file or directory)"
+        url: /pythonPythonIsPython3
 
   - title: ROS
     children:

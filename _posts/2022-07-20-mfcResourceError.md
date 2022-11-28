@@ -1,5 +1,5 @@
 ---
-title: "[Windows/MFC] 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
+title: "[MFC] 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
 
 sidebar:
     nav: "windows"
