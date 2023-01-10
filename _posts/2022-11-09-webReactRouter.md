@@ -22,20 +22,31 @@ $ npm install react-router-dom@6
 
 ## (2) 셋팅
 
-`src/index.js` 파일을 아래와 같이 수정한다.
+`src/main.jsx` 파일을 아래와 같이 수정한다.
 
 ```javascript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-      <BrowserRouter>
-        <App/>
-      </BrowserRouter>
-  </React.StrictMode>
-); 
+import App from './App'
+import './index.css'
+import store from './store.js'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<BrowserRouter>
+			<Provider store={store}>
+				<App />
+			</Provider>
+		</BrowserRouter>
+	</React.StrictMode>,
+);
 ```
+
+- `import { BrowserRouter } from "react-router-dom";` 추가
+- `<BrowserRouter>`, `</BrowserRouter>`으로 `<App />`을 감싸기
 
 <br/>
 

@@ -33,34 +33,42 @@ $ npm install @reduxjs/toolkit react-redux
 ```javascript
 import { configureStore } from '@reduxjs/toolkit'
 
-export default configureStore({
-  reducer: { }
-}) 
+const store = configureStore({
+    reducer: {
+    }
+})
+
+export default store;
 ```
 
-### b. `src/index.js` 파일 수정
+### b. `src/main.jsx` 파일 수정
 
-`src/index.js` 파일을 아래와 같이 수정한다.
+`src/main.jsx` 파일을 아래와 같이 수정한다.
 
 ```javascript
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
+
+import App from './App'
+import './index.css'
 import store from './store.js'
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <Provider store={store}>
-      <BrowserRouter>
-        <App/>
-      </BrowserRouter>
-    </Provider>
-  </React.StrictMode>
-); 
+ReactDOM.createRoot(document.getElementById('root')).render(
+	<React.StrictMode>
+		<BrowserRouter>
+			<Provider store={store}>
+				<App />
+			</Provider>
+		</BrowserRouter>
+	</React.StrictMode>,
+)
 ```
 
 - `import { Provider } from "react-redux";` 추가
 - `import store from './store.js'` 추가
-- `<Provider store={store}>`, `</Provider>`으로 `<App />` 부분을 감싸기
+- `<Provider store={store}>`, `</Provider>`으로 `<App />`을 감싸기
 
 <br/>
 
@@ -85,12 +93,14 @@ let cart = createSlice({
   ]
 })
 
-export default configureStore({
+const store = configureStore({
   reducer: {
     user : user.reducer,
     cart : cart.reducer
   }
-}) 
+})
+
+export default store;
 ```
 
 <br/>
@@ -104,18 +114,12 @@ export default configureStore({
 import { useSelector } from "react-redux"
 
 function Cart(){
-  let a = useSelector((state) => state.user ) 
+  let a = useSelector((state) => state.user);
+  let state = useSelector((state) => state);
 
-  let state = useSelector((state) => state)
-
-  state.cart.map((a, i)=>
-    <tr key={i}>
-      <td>1</td>
-      <td>{state.cart[i].name}</td>
-      <td>{state.cart[i].count}</td>
-      <td>안녕</td>
-    </tr>
-  )
+  console.log(a);
+  console.log(state.cart[0].name);
+  console.log(state.cart[0].count);
 
   return (생략)
 }
@@ -140,12 +144,12 @@ let user = createSlice({
   initialState : 'kim',
   reducers : {
     changeName(state){
-      return 'john ' + state
+      return 'john ' + state;
     }
   }
 }) 
 
-export let { changeName } = user.actions
+export const { changeName } = user.actions;
 ```
 
 ## (2) state 수정 함수 사용
