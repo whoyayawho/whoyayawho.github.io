@@ -59,6 +59,11 @@ ubuntu:
         url: /jetsonFanStart
 
 windows:
+  - title: Windows
+    children:
+      - title: "● VS Code에서 PowerShell UnauthorizedAccess 오류 해결"
+        url: /windowsUnauthorizedAccess
+
   - title: MFC
     children:
       - title: "● 리소스 오류 (error RC2104: undefined keyword or key name: SS_REALSIZECONTROL)"
@@ -80,6 +85,8 @@ dev:
         url: /pythonVenv
       - title: "● 파이썬 없이 파이썬3만 설치되어 있는 경우 오류 해결 (/usr/bin/env: 'python': No such file or directory)"
         url: /pythonPythonIsPython3
+      - title : "● requirements.txt 만들기 & 사용하기"
+        url: /pythonRequirements
 
   - title: ROS
     children:
