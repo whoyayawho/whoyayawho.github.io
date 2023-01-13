@@ -115,3 +115,7 @@ dev:
       - title : "● 자바스크립트 배열 함수"
         url: /webJavascriptArrayMethod
   
+  - title: others
+    children:
+      - title: "● VS Code Remote Server 다운로드 문제 해결 방법 (접속이 안 되면)"
+        url: /othersVSCodeRemoteSlow
