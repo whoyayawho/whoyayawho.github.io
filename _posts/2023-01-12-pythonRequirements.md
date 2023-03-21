@@ -37,7 +37,11 @@ $ pip freeze > requirements.txt
 아래 명령어를 실행하면 목록에 있는 패키지들이 설치된다.
 
 ```bash
-$ pip install -r requirements.txt
+$ pip install -r requirements.txt --no-cache-dir --no-warn-script-location
 ```
+
+> `--no-cache-dir` : 기본적으로 기존에 설치했던 패키지가 있으면 다시 다운 받아 설치하는 것이 아니라 cache에서 불러와 설치한다. 이 옵션을 넣으면 다시 다운 받아서 설치한다.  
+> `--no-warn-script-location` : venv 같은 가상환경으로 패키지를 설치하면 해당 경로가 path에 등록되어 있지 않아 경고가 뜬다. 이 옵션을 넣으면 경고가 뜨지 않는다.  
+{: .notice--info}
 
 <br/>
