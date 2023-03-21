@@ -3,12 +3,12 @@ title: "[Windows] VS Code에서 PowerShell UnauthorizedAccess 오류 해결"
 
 sidebar:
     nav: "windows"
+
+toc: false
 ---
 
 <br/>
 
-
-# 1. PowerShell UnauthorizedAccess 오류 해결
 
 Visual Studio Code에서 터미널 창을 열면 PowerShell이 실행된다. 
 

@@ -3,15 +3,14 @@ title: "[C++] 코드 실행 시간 측정"
 
 sidebar:
     nav: "dev"
+
+toc: false
 ---
 
 <br/>
 
 
 우분투에서 C++로 프로그래밍할 때, 코드 실행 시간을 측정하기 위해 아래 함수를 사용한다.
-
-
-# 1. 시간 측정
 
 ```cpp
 #include <chrono>

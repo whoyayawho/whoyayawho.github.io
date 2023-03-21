@@ -3,11 +3,11 @@ title: "[Ubuntu] 노트북 덮었을 때 절전모드 진입 끄기"
 
 sidebar:
     nav: "ubuntu"
+
+toc: false
 ---
 
 <br/>
-
-# 1. `logind.conf` 파일 수정
 
 `/etc/systemd/logind.conf` 파일에서 아래 부분을 찾아 수정
 

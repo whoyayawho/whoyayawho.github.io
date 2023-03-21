@@ -3,6 +3,8 @@ title: "[Ubuntu] apt update 실패 (Temporary failure resolving 'ports.ubuntu.co
 
 sidebar:
     nav: "ubuntu"
+
+toc: false
 ---
 
 <br/>

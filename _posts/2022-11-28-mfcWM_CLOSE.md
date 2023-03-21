@@ -3,6 +3,8 @@ title: "[MFC] MFC 종료 함수"
 
 sidebar:
     nav: "windows"
+
+toc: false
 ---
 
 <br/>

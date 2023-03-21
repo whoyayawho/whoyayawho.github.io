@@ -3,6 +3,8 @@ title: "[Jetson] Jetpack 버전 확인"
 
 sidebar:
     nav: "ubuntu"
+
+toc: false
 ---
 
 <br/>

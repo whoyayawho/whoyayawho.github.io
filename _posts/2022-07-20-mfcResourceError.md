@@ -3,6 +3,8 @@ title: "[MFC] 리소스 오류 (error RC2104: undefined keyword or key name: SS_
 
 sidebar:
     nav: "windows"
+
+toc: false
 ---
 
 <br/>

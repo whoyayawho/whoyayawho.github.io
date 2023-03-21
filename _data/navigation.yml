@@ -50,6 +50,8 @@ ubuntu:
         url : /ubuntuSShSetup
       - title : "● 쉘스크립트 자동 실행 등록 및 더블 클릭 실행 (feat. Docker)"
         url : /ubuntuShellScriptAutoStart
+      - title : "● 장착된 그래픽카드 확인"
+        url : /ubuntuCheckVGA
 
   - title: Jetson
     children:
