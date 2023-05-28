@@ -23,7 +23,7 @@ sidebar:
 
 ```bash
 $ python3 -m venv ${환경이름}
-$ python3 -m venv .venv         # 예시
+$ python3 -m venv _venv_         # 예시
 ```
 
 <br/>
@@ -33,8 +33,16 @@ $ python3 -m venv .venv         # 예시
 
 가상 환경을 실행하기 위해서는 아래 명령어를 통해 activate 해야 한다.
 
+## (1) Ubuntu
+
 ```bash
 $ source ${환경이름}/bin/activate
+```
+
+## (2) Windows
+
+```bash
+$ ./${환경이름}/Scripts/Activate.ps1
 ```
 
 가상 환경을 activate 하면 터미널 앞에 `(${환경이름})` 글자가 붙는다. 

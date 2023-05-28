@@ -52,6 +52,8 @@ ubuntu:
         url: ubuntuShellScriptAutoStart
       - title: "● 장착된 그래픽카드 확인"
         url: ubuntuCheckVGA
+      - title: "● 디스크, 폴더, 파일의 사용량/전체 용량 크기 확인"
+        url: ubuntuStorage
 
   - title: Jetson
     children:
