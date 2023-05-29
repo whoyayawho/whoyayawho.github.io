@@ -91,6 +91,8 @@ dev:
         url: pythonPythonIsPython3
       - title: "● requirements.txt 만들기 & 사용하기"
         url: pythonRequirements
+      - title : "● 파일/폴더의 경로 관련 함수 (os.path)"
+        url: pythonPath
 
   - title: ROS
     children:
