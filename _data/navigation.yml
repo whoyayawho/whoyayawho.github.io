@@ -8,6 +8,8 @@ main:
     url: webInit
   - title: "만들기"
     url: makeblog1
+  - title: "기타"
+    url: othersYTDown
 
 making:
   - title: 블로그 만들기
@@ -125,3 +127,9 @@ dev:
     children:
       - title: "● VS Code Remote Server 다운로드 문제 해결 방법 (접속이 안 되면)"
         url: othersVSCodeRemoteSlow
+
+others:
+  - title: 유용한 프로그램
+    children:
+      - title: "● 유튜브 영상 다운로드 (yt_downloader)"
+        url: othersYTDown
