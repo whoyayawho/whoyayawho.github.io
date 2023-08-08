@@ -96,6 +96,11 @@ dev:
       - title : "● 파일/폴더의 경로 관련 함수 (os.path)"
         url: pythonPath
 
+  - title: Git
+    children:
+      - title: "● submodule 사용하기"
+        url: gitSubmodule
+
   - title: ROS
     children:
       - title: "● PCL To/From ROS msg 변환"
