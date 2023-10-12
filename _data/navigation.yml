@@ -76,6 +76,8 @@ windows:
         url: mfcResourceError
       - title: "● MFC 종료 함수"
         url: mfcWM_CLOSE
+      - title: "● 문자열(string) 형변환"
+        url: mfcCastString
 
 dev:
   - title: C++
