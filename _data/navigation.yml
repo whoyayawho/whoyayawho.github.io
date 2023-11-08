@@ -63,6 +63,8 @@ ubuntu:
         url: jetsonJetpackVer
       - title: "● 쿨링팬 구동 설정"
         url: jetsonFanStart
+      - title: "● Jetson 상태 확인 (tegrastats, jtop)"
+        url: jetsonTegrastats
 
 windows:
   - title: Windows
