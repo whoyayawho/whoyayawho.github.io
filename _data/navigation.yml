@@ -71,6 +71,8 @@ windows:
     children:
       - title: "● VS Code에서 PowerShell UnauthorizedAccess 오류 해결"
         url: windowsUnauthorizedAccess
+      - title: "● Visual Studio에서 DLL 만들기"
+        url: windowsVSDLLCreate
 
   - title: MFC
     children:
