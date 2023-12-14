@@ -103,6 +103,8 @@ dev:
         url: pythonPath
       - title: "● 인스턴스 메소드, 클래스 메소드, 정적 메소드 (@classmethod, @staticmethod)"
         url: pythonClassmethod
+      - title: "● pip로 특정 버전 설치, 설치 가능 버전 확인, 업데이트"
+        url: pythonPipUpdate
 
   - title: Git
     children:
