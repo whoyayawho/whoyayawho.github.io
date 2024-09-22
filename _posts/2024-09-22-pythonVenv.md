@@ -3,6 +3,8 @@ title: "[Python] 가상 환경 설정 (venv)"
 
 sidebar:
     nav: "dev"
+
+toc: true
 ---
 
 <br/>
