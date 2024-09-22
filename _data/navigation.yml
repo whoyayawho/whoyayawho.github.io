@@ -58,6 +58,8 @@ ubuntu:
         url: ubuntuStorage
       - title: "● 우분투 기본 부팅 순서, timeout 변경"
         url: ubuntuChangeBootPriority
+      - title: "● USB 외장하드, SSD 등 마운트(Mount) 안 되는 문제 해결"
+        url: ubuntuUSBMount
 
   - title: Jetson
     children:
