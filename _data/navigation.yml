@@ -77,6 +77,8 @@ windows:
         url: windowsUnauthorizedAccess
       - title: "● Visual Studio에서 DLL 만들기"
         url: windowsVSDLLCreate
+      - title: "● \"이 사진에 대한 자세한 정보\" 아이콘 삭제 (배경화면 Windows 추천)"
+        url: windowsHideWallpapersIcon
 
   - title: MFC
     children:
