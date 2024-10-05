@@ -60,6 +60,8 @@ ubuntu:
         url: ubuntuChangeBootPriority
       - title: "● USB 외장하드, SSD 등 마운트(Mount) 안 되는 문제 해결"
         url: ubuntuUSBMount
+      - title: "● 와이파이 안 되는 문제 해결 (우분투 커널 버전 올리기)"
+        url: ubuntuKernelInstall
 
   - title: Jetson
     children:
