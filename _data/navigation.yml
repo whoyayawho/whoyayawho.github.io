@@ -64,6 +64,8 @@ ubuntu:
         url: ubuntuKernelInstall
       - title: "● .AppImage 파일 실행 및 설치 (프로그램 목록에 표시)"
         url: ubuntuAppImage
+      - title: "● 여러 버전의 파이썬 관리 (pyenv)"
+        url: ubuntuPyenv
 
   - title: Jetson
     children:
