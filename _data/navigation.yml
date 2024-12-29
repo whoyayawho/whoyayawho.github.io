@@ -62,6 +62,8 @@ ubuntu:
         url: ubuntuUSBMount
       - title: "● 와이파이 안 되는 문제 해결 (우분투 커널 버전 올리기)"
         url: ubuntuKernelInstall
+      - title: "● .AppImage 파일 실행 및 설치 (프로그램 목록에 표시)"
+        url: ubuntuAppImage
 
   - title: Jetson
     children:
@@ -79,7 +81,7 @@ windows:
         url: windowsUnauthorizedAccess
       - title: "● Visual Studio에서 DLL 만들기"
         url: windowsVSDLLCreate
-      - title: "● \"이 사진에 대한 자세한 정보\" 아이콘 삭제 (배경화면 Windows 추천)"
+      - title: '● "이 사진에 대한 자세한 정보" 아이콘 삭제 (배경화면 Windows 추천)'
         url: windowsHideWallpapersIcon
 
   - title: MFC
@@ -107,7 +109,7 @@ dev:
         url: pythonPythonIsPython3
       - title: "● requirements.txt 만들기 & 사용하기"
         url: pythonRequirements
-      - title : "● 파일/폴더의 경로 관련 함수 (os.path)"
+      - title: "● 파일/폴더의 경로 관련 함수 (os.path)"
         url: pythonPath
       - title: "● 인스턴스 메소드, 클래스 메소드, 정적 메소드 (@classmethod, @staticmethod)"
         url: pythonClassmethod
@@ -134,7 +136,7 @@ dev:
         url: docker
       - title: "● Visual Studio Code에서 Docker가 보이지 않음 (Docker 사용자 그룹 추가)"
         url: dockerUsermod
-      - title: "● 오류 \"could not select device driver\" (nvidia-container-toolkit)"
+      - title: '● 오류 "could not select device driver" (nvidia-container-toolkit)'
         url: dockerSelectDeviceDriverError
 
   - title: Web
@@ -147,7 +149,7 @@ dev:
         url: webReactRedux
       - title: "● 자바스크립트 배열 함수"
         url: webJavascriptArrayMethod
-  
+
   - title: others
     children:
       - title: "● VS Code Remote Server 다운로드 문제 해결 방법 (접속이 안 되면)"
