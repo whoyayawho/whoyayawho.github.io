@@ -151,6 +151,8 @@ dev:
         url: webReactRedux
       - title: "● 자바스크립트 배열 함수"
         url: webJavascriptArrayMethod
+      - title: "● NPM 패키지 업그레이드"
+        url: webNpmPackageUpgrade
 
   - title: others
     children:
