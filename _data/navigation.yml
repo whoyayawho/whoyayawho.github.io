@@ -66,6 +66,8 @@ ubuntu:
         url: ubuntuAppImage
       - title: "● 여러 버전의 파이썬 관리 (pyenv)"
         url: ubuntuPyenv
+      - title: "● tty 권한 설정 및 항상 유지 (/dev/tty*)"
+        url: ubuntuTtyPermission
 
   - title: Jetson
     children:
