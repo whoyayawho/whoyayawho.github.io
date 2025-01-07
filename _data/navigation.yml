@@ -119,6 +119,8 @@ dev:
         url: pythonClassmethod
       - title: "● pip로 특정 버전 설치, 설치 가능 버전 확인, 업데이트"
         url: pythonPipUpdate
+      - title: "● .py 파일을 .pyd 파일로 변환 (setup.py 이용)"
+        url: pythonPyToPyd
 
   - title: Git
     children:
