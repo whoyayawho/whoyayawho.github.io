@@ -1,5 +1,5 @@
 ---
-title: "[Python] .py 파일을 .pyd 파일로 변환(setup.py 이용)"
+title: "[Python] .py 파일을 .pyd 파일로 변환(setup.py)"
 
 sidebar:
   nav: "dev"
@@ -18,8 +18,7 @@ sidebar:
 # 2. 필요 라이브러리 설치
 
 ```bash
-pip install cython
-pip install setuptools
+pip install cython setuptools
 ```
 
 <br/>
