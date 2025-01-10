@@ -214,9 +214,21 @@ def main():
     print("Generating EXE file...")
     for py_file in glob.glob("*.py"):
         if py_file != "make.py":
-            run_cmd(f'pyinstaller -i "NONE" {py_file}', ".")
+            try:
+                run_cmd(f'pyinstaller -i "NONE" {py_file}', ".")
+
+                exe_folder = py_file.replace(".py", "")
+                try:
+                    shutil.copytree(f"dist/{exe_folder}", f"./{exe_folder}")
+                    print(f"Executable folder copied: {exe_folder}")
+                except (shutil.Error, OSError) as e:
+                    print(f"Failed to copy executable folder: {e}")
+            except (subprocess.CalledProcessError, shutil.Error, OSError) as e:
+                print(f"Failed to generate EXE file: {e}")
+                return
 
     cleanup_build_files()
+    remove_directory("dist")
     print("Build process completed")
 
 
@@ -293,10 +305,7 @@ setup(
 
 ```
 _venv_
-*.exe
 *.spec
-*.pyd
-*.c
 *.pyc
 *.pyo
 ```
@@ -305,7 +314,7 @@ _venv_
 
 # 5. 실행
 
-아래 명령어를 실행하면 dist 폴더에 `.exe` 파일이 생성된다.
+아래 명령어를 실행하면 file_to_make_exe 폴더가 생성되며, 그 폴더 내에 `.exe` 파일이 생성된다.
 
 ```bash
 python make.py
