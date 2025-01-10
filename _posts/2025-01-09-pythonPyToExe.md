@@ -200,13 +200,16 @@ def main():
     cleanup_build_files()
     remove_directory("dist")
 
-    print("Generating .pyd files...")
-    try:
-        run_cmd("python ./setup.py build_ext --inplace", "./lib")
-        copy_pyd_files()
-    except (subprocess.CalledProcessError, shutil.Error, OSError) as e:
-        print(f"Failed to generate PYD files: {e}")
-        return
+    if os.path.exists("./lib"):
+        print("Generating .pyd files...")
+        try:
+            run_cmd("python ./setup.py build_ext --inplace", "./lib")
+            copy_pyd_files()
+        except (subprocess.CalledProcessError, shutil.Error, OSError) as e:
+            print(f"Failed to generate PYD files: {e}")
+            return
+    else:
+        print("Skipping .pyd generation - lib directory not found")
 
     print("Generating EXE file...")
     for py_file in glob.glob("*.py"):
