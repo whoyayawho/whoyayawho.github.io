@@ -34,31 +34,42 @@ $ npm run dev
 프로젝트 폴더 안에서 아래 명령어를 실행한다.
 
 ```bash
-$ npm install -D tailwindcss postcss autoprefixer
-$ npx tailwindcss init -p
+$ npm install tailwindcss @tailwindcss/vite
 ```
 
-## (2) `postcss.config.js` 파일을 `postcss.config.cjs` 으로 확장자 변경
-
-## (3) `tailwind.config.cjs` 파일 수정
+## (2) `electron.vite.config.mjs` 파일 수정
 
 ```javascript
-/** @type {import('tailwindcss').Config} */
-module.exports = {
-  content: [
-    "./src/renderer/index.html",
-    "./src/renderer/src/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {},
+import { resolve } from "path";
+import { defineConfig, externalizeDepsPlugin } from "electron-vite";
+import react from "@vitejs/plugin-react";
+import tailwindcss from "@tailwindcss/vite";
+
+export default defineConfig({
+  main: {
+    plugins: [externalizeDepsPlugin()],
   },
-  plugins: [],
-};
+  preload: {
+    plugins: [externalizeDepsPlugin()],
+  },
+  renderer: {
+    resolve: {
+      alias: {
+        "@renderer": resolve("src/renderer/src"),
+        "@assets": resolve("src/renderer/src/assets"),
+        "@components": resolve("src/renderer/src/components"),
+        "@utils": resolve("src/renderer/src/utils"),
+        "@redux": resolve("src/renderer/src/redux"),
+      },
+    },
+    plugins: [react(), tailwindcss()],
+  },
+});
 ```
 
-## (4) `src/renderer/src/assets` 내의 다른 파일들 모두 삭제
+## (3) `src/renderer/src/assets` 내의 다른 파일들 모두 삭제
 
-## (5) `src/renderer/src/assets/index.css` 파일 생성
+## (4) `src/renderer/src/assets/main.css` 파일 생성
 
 ```css
 body {
@@ -80,9 +91,7 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
 
 @font-face {
   font-family: "NanumSquareNeo-B";
@@ -130,7 +139,7 @@ input[type="number"] {
 }
 ```
 
-## (6) `src/renderer/src/assets/fonts` 폴더에 폰트 파일 넣기
+## (5) `src/renderer/src/assets/fonts` 폴더에 폰트 파일 넣기
 
 <br/>
 
@@ -245,7 +254,7 @@ export default Test;
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self' http://localhost:* ws://127.0.0.1:*; script-src 'self'; style-src 'self' 'unsafe-inline'"
+      content="default-src 'self' http://localhost:* ws://127.0.0.1:*; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:"
     />
   </head>
 
@@ -279,7 +288,7 @@ function createWindow() {
     autoHideMenuBar: true,
     ...(process.platform === "linux" ? { icon } : {}),
     webPreferences: {
-      preload: join(__dirname, "../preload/index.js"),
+      preload: join(__dirname, "../preload/index.mjs"),
       sandbox: false,
     },
   });
@@ -537,37 +546,6 @@ npmRebuild: false
 publish:
   provider: generic
   url: https://example.com/auto-updates
-```
-
-<br/>
-
-# 14. `electron.vite.config.mjs` 파일 수정
-
-```javascript
-import { resolve } from "path";
-import { defineConfig, externalizeDepsPlugin } from "electron-vite";
-import react from "@vitejs/plugin-react";
-
-export default defineConfig({
-  main: {
-    plugins: [externalizeDepsPlugin()],
-  },
-  preload: {
-    plugins: [externalizeDepsPlugin()],
-  },
-  renderer: {
-    resolve: {
-      alias: {
-        "@renderer": resolve("src/renderer/src"),
-        "@assets": resolve("src/renderer/src/assets"),
-        "@components": resolve("src/renderer/src/components"),
-        "@utils": resolve("src/renderer/src/utils"),
-        "@redux": resolve("src/renderer/src/redux"),
-      },
-    },
-    plugins: [react()],
-  },
-});
 ```
 
 <br/>
