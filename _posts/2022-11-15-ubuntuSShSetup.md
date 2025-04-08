@@ -2,7 +2,7 @@
 title: "[Ubuntu] 원격 접속을 위한 SSH 설정"
 
 sidebar:
-    nav: "ubuntu"
+  nav: "ubuntu"
 ---
 
 <br/>
@@ -15,7 +15,6 @@ $ sudo apt install ssh openssh-server
 
 <br/>
 
-
 # 2. `sshd_config` 파일 수정
 
 아래 명령어를 실행하여 `sshd_config` 파일 수정
@@ -24,16 +23,26 @@ $ sudo apt install ssh openssh-server
 $ sudo vim /etc/ssh/sshd_config
 ```
 
-## (1)  `PermitRootLogin` 부분을 주석 해제하고 아래와 같이 yes 설정
+## (1) `PermitRootLogin` 부분을 주석 해제하고 아래와 같이 yes 설정
 
 ```
 PermitRootLogin yes
 ```
 
-## (2)  `Port 22` 부분을 주석 해제하고 아래와 같이 원하는 포트 번호로 설정
+## (2) `Port 22` 부분을 주석 해제하고 아래와 같이 원하는 포트 번호로 설정
 
 ```
 Port 1234
+```
+
+<br/>
+
+# 3. 접속
+
+SSH로 접속할 때는 아래와 같은 명령어를 통해 접속한다.
+
+```bash
+$ ssh -Y {username}@{ipaddr} -p {port}
 ```
 
 <br/>
