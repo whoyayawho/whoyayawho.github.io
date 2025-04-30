@@ -2,13 +2,12 @@
 title: "[Docker] Visual Studio Code에서 Docker가 보이지 않음 (Docker 사용자 그룹 추가)"
 
 sidebar:
-    nav: "dev"
+  nav: "dev"
 
 toc: false
 ---
 
 <br/>
-
 
 Visual Studio Code를 사용하면 Extension을 활용하여 Docker를 편하게 사용할 수 있다.
 
@@ -18,9 +17,8 @@ Docker가 잘 설치되어 있는데도 문제가 있다는 경우에는 아래 
 
 ```bash
 $ sudo groupadd docker
-$ sudo usermod -aG docker $USER 
+$ sudo usermod -aG docker $USER
+$ newgrp docker
 ```
 
 <br/>
-
-
